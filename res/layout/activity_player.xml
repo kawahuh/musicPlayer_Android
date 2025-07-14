@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歌曲名"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_lyrics"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"/>
+
+    <Button
+        android:id="@+id/btn_play_pause"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="播放"/>
+
+</LinearLayout> 
